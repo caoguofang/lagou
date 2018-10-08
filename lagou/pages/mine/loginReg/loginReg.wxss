@@ -1,0 +1,54 @@
+/* pages/mine/loginReg/loginReg.wxss */
+.login,.register{
+  padding:30rpx;
+}
+.title{
+  display: flex;
+  justify-content: space-between;
+}
+.title>text:first-child{
+  font-size:18px;
+  font-weight: bold;
+}
+.title>text:last-child{
+  color:#00B26A;
+}
+
+.ym>view{
+  display: flex;
+  padding-top:20rpx;
+  padding-bottom:20rpx;
+  width:100%;
+  margin-top:10rpx;
+  margin-bottom:10rpx;
+}
+.ym>view>text{
+  width:20%;
+}
+.ym>view>input{
+  width:80%;
+  border-bottom:1rpx solid #ddd;
+}
+.ym>view:nth-child(3){
+  margin-top:80rpx;
+}
+.reg{
+  width:100%;
+  height:50rpx;
+  background-color: #00B26A;
+  color:#fff;
+  text-align: center;
+  font-size:16px;
+  display: block;
+}
+.reg text{
+  display: inline-block;
+  margin:0 auto;
+}
+
+.xieyi{
+  margin-top:40rpx;
+}
+.xieyi>text:first-child{
+  font-weight: lighter;
+}

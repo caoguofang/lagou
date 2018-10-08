@@ -1,0 +1,165 @@
+/* pages/zhi/zhiDetail/zhiDetail.wxss */
+.top{
+  padding:20rpx;
+}
+.top_title{
+  border-bottom:1rpx solid #ddd;
+  padding-bottom:20rpx;
+}
+.top_title>view:first-child{
+  font-size:18px;
+  margin-bottom:10rpx;
+}
+.top_title .price{
+  color:red;
+}
+.top_title>view:last-child{
+  margin-top:10rpx;
+  font-size:12px;
+  font-weight: lighter;
+}
+
+/*公司简介*/
+.company{
+  margin-top:30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.company>view:first-child{
+  display: flex;
+  flex-direction: column;
+}
+.company>view:first-child>text:first-child{
+  font-size:16px;
+  margin-bottom:10rpx;
+}
+.company>view:first-child>image{
+  width:100rpx;
+  height:40rpx;
+  margin-top:10rpx;
+}
+.company>image{
+  width:100rpx;
+  height:100rpx;
+  border-radius:50%;
+}
+
+/*职位描述*/
+.job_detail{
+  padding:30rpx;
+}
+.hrInfo{
+  text-align: center;
+}
+.job_my text{
+  line-height:1.5;
+  font-weight: lighter;
+}
+.job_title{
+  font-size:16px;
+  padding-top:20rpx;
+  padding-bottom:20rpx;
+}
+.hrInfo image{
+  margin:30rpx;
+  width:120rpx;
+  height:120rpx;
+  border-radius: 50%;
+}
+.hrInfo .hr_job{
+  margin-left:10rpx;
+  font-weight: lighter
+}
+.hrInfo .huoTime>text{
+  font-weight: lighter;
+}
+.job_add{
+  padding:20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.job_add image{
+  height:80rpx;
+  width:80rpx;
+}
+
+.job_addDe{
+  text-align: left;
+}
+.likeJob{
+  padding:20rpx;
+}
+.likeJob .job_list:first-child{border:0;}
+.job_list{
+  border-top:1rpx solid #ddd;
+  padding-bottom:20rpx;
+}
+.job_list .top{
+  display: flex;
+  justify-content: space-between;
+}
+.job_list .top .t_title>view:first-child{
+  font-size:16px;
+  margin-bottom:10rpx;
+}
+.job_list .top .t_title>view:last-child{
+  font-weight: lighter;
+}
+.job_list .top .job_price>text{
+  color:red;
+  font-size:16px;
+  margin-bottom:10rpx;
+}
+
+.bottom{
+  display: flex;
+  align-items: center;
+}
+.bottom image{
+  width:100rpx;
+  height:100rpx;
+  margin-right:20rpx;
+}
+.bottom .likeInfo>view:last-child>text{
+  font-weight: lighter;
+  font-size:12px;
+}
+.likeJob .button{
+  width:85%;
+  margin-left:7.5%;
+  margin-top:10rpx;
+  margin-bottom:10rpx;
+}
+.likeJob .button>button{
+  font-size:14px;
+  color:#00B38A;
+  height:70rpx;
+}
+.shouc{
+  padding:20rpx;
+  display: flex;
+  width:100%;
+  justify-content:center;
+  align-items: center;
+  position: fixed;
+  bottom:0;
+  background:rgba(252, 249, 249,0.9);
+}
+.shouc image{
+  width:70rpx;
+  height:60rpx;
+  margin-right:20rpx;
+}
+.shouc text{
+  display: inline-block;
+  background-color:#01B38A;
+  color:#fff;
+  width:65%;
+  height:80rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+.bs{
+  margin-bottom:120rpx;
+}

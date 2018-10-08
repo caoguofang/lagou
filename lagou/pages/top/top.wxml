@@ -1,0 +1,129 @@
+<!--pages/top/top.wxml-->
+<view class="slider">
+  <swiper autoplay interval="3000" circular indicator-dots='{{true}}' indicator-active-color='red' indicator-color='#fff'>
+    <swiper-item wx:for="{{imgList}}" wx:key="id">
+      <image src="{{item}}" mode="aspectFill" lazy-load></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="shang">
+  <text>以下是前一百名的招聘官，榜单实时更新</text>
+  <navigator>如何上榜？</navigator>
+</view>
+<!--排行列表-->
+
+<view class="topList" bindtap="goTopDetail">
+    <view class="left_img">
+      <image src="http://127.0.0.1:3000/images/gt/t1.png" mode="aspectFill"></image>
+      <view class="info">
+      <view class="info_title">
+        <text>涂鸦王国</text>
+      </view>
+      <view class="info_middle">
+        <text>厦门/社交网络、文化娱乐/1个在招职位</text>
+      </view>
+      <view class="hr">
+        <image src="http://127.0.0.1:3000/images/gt/ty.png" mode="aspectFill"></image>
+        <text>星池·面试官</text>
+        <text>5311·曝光度</text>
+      </view>
+    </view>
+    </view>
+    <view>
+      <image src="http://127.0.0.1:3000/images/gt/ty.png" mode="aspectFill"></image>
+    </view>
+  </view>
+<view class="topList"  bindtap="goTopDetail">
+    <view class="left_img">
+      <image src="http://127.0.0.1:3000/images/gt/t2.png" mode="aspectFill"></image>
+      <view class="info">
+        <view class="info_title">
+          <text>老爸评测</text>
+        </view>
+        <view class="info_middle">
+          <text>杭州/电子商务、移动互联网/78个在招职位</text>
+        </view>
+        <view class="hr">
+          <image src="http://127.0.0.1:3000/images/gt/lb.png" mode="aspectFill"></image>
+          <text>kiki chen</text>
+          <text>4111·曝光度</text>
+        </view>
+    </view>
+    </view>
+    <view>
+      <image src="http://127.0.0.1:3000/images/gt/lb.png" mode="aspectFill"></image>
+    </view>
+  </view> 
+
+
+<view class="topList"  bindtap="goTopDetail">
+    <view class="left_img">
+      <image src="http://127.0.0.1:3000/images/gt/t3.png" mode="aspectFill"></image>
+      <view class="info">
+        <view class="info_title">
+          <text>Rokid</text>
+        </view>
+        <view class="info_middle">
+          <text>杭州/电子商务、移动互联网/78个在招职位</text>
+        </view>
+        <view class="hr">
+          <image src="http://127.0.0.1:3000/images/gt/Rokid.png" mode="aspectFill"></image>
+          <text>kiki chen</text>
+          <text>4111·曝光度</text>
+        </view>
+    </view>
+    </view>
+    <view>
+      <image src="http://127.0.0.1:3000/images/gt/Rokid.png" mode="aspectFill"></image>
+    </view>
+</view> 
+
+<view class="topList"  wx:for="{{topList}}" wx:key="id"  bindtap="goTopDetail">
+    <view class="left_img">
+      <view class="ttt">{{item.id+3}}</view>
+      <view class="info">
+        <view class="info_title">
+          <text>{{item.cname}}</text>
+        </view>
+        <view class="info_middle">
+          <text>杭州/电子商务、移动互联网/78个在招职位</text>
+        </view>
+        <view class="hr">
+          <image src="{{item.c_img}}" mode="aspectFill"></image>
+          <text>{{item.hrName}}</text>
+        <text>{{item.puguang}}·曝光度</text>
+        </view>
+    </view>
+    </view>
+    <view>
+      <image src="{{item.c_img}}" mode="aspectFill"></image>
+    </view>
+</view>
+
+  <!-- <view class="topList">
+    <view class="left_img">
+      <view class="ttt">5</view>
+      <view class="info">
+        <view class="info_title">
+          <text>Rokid</text>
+        </view>
+        <view class="info_middle">
+          <text>杭州/电子商务、移动互联网/78个在招职位</text>
+        </view>
+        <view class="hr">
+          <image src="/images/gt/Rokid.png"></image>
+          <text>kiki chen</text>
+          <text>4111·曝光度</text>
+        </view>
+    </view>
+    </view>
+    <view>
+      <image src="/images/gt/Rokid.png"></image>
+    </view>
+  </view>  -->
+
+  <view class="loadmore loading" wx:if="{{hasMore}}">正在加载...</view>
+<view calss="loadmore" wx:else>数据已经加载完毕...</view>
+  
+
+

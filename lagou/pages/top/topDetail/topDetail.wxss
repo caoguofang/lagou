@@ -1,0 +1,174 @@
+/* pages/top/topDetail/topDetail.wxss */
+/*上部*/
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  padding:20rpx;
+  border-bottom:1rpx solid #ddd;
+}
+.top .tLeft image{
+  width:100rpx;
+  height:40rpx;
+}
+.top>image{
+  width:120rpx;
+  height:120rpx;
+  border-radius: 50%;
+}
+.tLeft{
+  width:64%;
+}
+.tLeft>view:first-child>text{
+  font-size:18px;
+  line-height: 1.5;
+}
+.tLeft>view:nth-child(2){
+  font-weight: lighter;
+  font-size:14px;
+  margin-top:10rpx;
+  margin-bottom:10rpx;
+}
+.fangke{
+  padding:20rpx;
+  font-weight: lighter;
+}
+.fangke image{
+  width:70rpx;
+  height:70rpx;
+  margin-top:20rpx;
+}
+.fangke>view:last-child{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fangke>view:last-child text{
+  font-size:30px;
+  font-weight:lighter;
+}
+.companyInfo{
+  padding:20rpx;
+}
+.companyInfo>view:first-child{
+  display: flex;
+  justify-content: space-around;
+  border-bottom:1rpx solid #ddd;
+  font-size:16px;
+  padding-bottom:20rpx;
+}
+.shuxian{
+  border-right:1rpx solid #ddd;
+  height:50rpx;
+}
+.xia_jian{
+  margin-left:30rpx;
+}
+.L,.R{
+  width:100%;
+  height:100%;
+  text-align: center;
+}
+
+.text1{
+  line-height: 1.5;
+}
+.swipe{
+  margin-top:20rpx;
+  margin-bottom:20rpx;
+}
+.swipe>swiper,swiper>swiper-item,swiper-item>image{
+  width:100%;
+}
+.zhuye .chan image{
+  margin-top:20rpx;
+  width:100%;
+  height:300rpx;
+}
+.address image{
+  width:40rpx;
+  height:40rpx;
+}
+.address{
+  margin-top:20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.address>view:first-child{
+  display: flex;
+}
+.addre{
+  margin-left:20rpx;
+}
+.addD{
+  font-weight: lighter;
+  font-size:12px;
+}
+.copy{
+  width:100%;
+  padding-top:75rpx;
+  padding-bottom:75rpx;
+  font-size:12px;
+  font-weight: lighter;
+  text-align: center;
+  vertical-align: middle;
+}
+.fenxiang{
+  width:100rpx;
+  height:100rpx;
+  border-radius: 50%;
+  background-color: rgba(29, 197, 158,0.8);
+  position:fixed;
+  bottom:50rpx;
+  right:30rpx;
+  text-align: center;
+  box-shadow:0 0 10rpx 10rpx #ddd;
+}
+.fenxiang text{
+  line-height: 100rpx;
+  font-size:16px;
+  color:red;
+}
+
+/*技术*/
+.job .jobList{
+  padding:20rpx; 
+  text-align: center;
+}
+.job .jobList>text{
+  display: inline-block;
+  margin:10rpx;
+  padding:15rpx;
+  border:1rpx solid #ddd;
+  border-radius:25rpx;
+}
+
+.active{
+  background-color: #00B26A;
+  color:#fff;
+}
+.jList{
+  display: flex;
+  justify-content: space-between;
+  padding-top:20rpx;
+  padding-bottom:20rpx;
+  border-bottom:1px solid #ddd;
+}
+.jList>view:first-child>view:first-child>text{
+  font-size:16px;
+}
+.jList>view:first-child>view:last-child>text{
+  padding-top:20rpx;
+  display: inline-block;
+  font-weight: lighter;
+}
+.jList>view:last-child>view:first-child>text{
+  font-size:16px;
+  color:red;
+}
+.jList>view:last-child>view:last-child>text{
+  display: inline-block;
+  font-weight: lighter;
+  padding-top:20rpx;
+}

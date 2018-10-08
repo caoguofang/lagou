@@ -1,0 +1,184 @@
+<!--pages/zhi/zhiDetail/zhiDetail.wxml-->
+<!--标题-->
+<view class="top">
+  <view class="top_title">
+    <view><text>web前端开发工程师</text></view>
+    <view>
+      <text class="price">20K-39K</text>
+      <text>/北京</text>
+      <text>/3-5年/本科</text>
+    </view>
+    <view>
+      职位诱惑：福利待遇好，弹性上下班，技术牛人多
+    </view>
+  </view>
+  <view class="company" bindtap="goCompany">
+    <view>
+      <text>人人行(借贷宝)</text>
+      <text>c轮/2000以上/移动互联网，金融</text>
+      <image src="http://127.0.0.1:3000/images/gt/renzheng.png"></image>
+    </view>
+    <image src="http://127.0.0.1:3000/images/gt/jie.png"></image>
+  </view>
+</view>
+<view class="borderS"></view>
+<!--职位描述-->
+<view class="job_detail">
+  <view class=".tui_T">
+    <view></view>
+    <text>职位描述</text>
+    <view></view>
+  </view>
+  <view class="job_b">
+    <text>高级</text>
+    <text>前端</text>
+    <text>web前端</text>
+    <text>HTML</text>
+    <text>JavaScript</text>
+    <text>html5</text>
+  </view>
+  <!--岗位描述-->
+  <view class="job_my">
+    <view class="job_title"><text>职位描述：</text></view>
+    <view><text>1.负责产品移动端前端部分的设计和研发；</text></view>
+    <view><text>2.负责产品需求技术评估以及提供对应的解决方案；</text></view>
+    <view><text>3.负责指导前端工程师并参与部分前端架构开发工作</text></view>
+    <view><text>4.负责解决网站产品在不同浏览器及不同版本下的兼容问题</text></view>
+    <view><text>5.负责网站产品性能和代码优化的实施。</text></view>
+  </view>
+  <!--岗位要求-->
+  <view class="job_my">
+    <view class="job_title"><text>岗位要求：</text></view>
+    <view><text>1.熟练掌握HTML CSS3 ES6 webpack等规范和技术；</text></view>
+    <view><text>2.掌握pc和手机H5适配，能解决常见浏览器兼容问题；</text></view>
+    <view><text>3.熟练掌握vue全家桶，理解框架原理；</text></view>
+    <view><text>4.熟悉小程序 NodeJS 或者有canvas echarts highcharts等开发经验者优先；</text></view>
+    <view><text>5.善于沟通和逻辑表达，良好的团队合作精神和积极主动的沟通意识</text></view>
+    <view><text>6.学习能力强，有较好的沟通能力，能迅速融入团队，热爱前端技术、关注国内外各大技术论坛，有技术博客者优先</text></view>
+  </view>
+</view>
+
+<!--职位发布者-->
+<view class=".tui_T">
+  <view></view>
+  <text>职位发布者</text>
+  <view></view>
+</view>
+<view class="hrInfo">
+  <view>
+    <image src="http://127.0.0.1:3000/images/gt/1.jpg"></image>
+  </view>
+  <view>
+    <text>曹国防</text>
+    <text class="hr_job">招聘主管</text>  
+  </view>
+  <view class="huoTime">
+    <text>最近活跃：35分钟前</text>
+  </view>
+  <view class="job_b">
+    <text>简历处理神速</text>
+    <text>全天活跃</text>
+    <text>很少回聊天信息</text>
+  </view>
+  <!--工作地址-->
+  <view class=".tui_T">
+    <view></view>
+    <text>工作地址</text>
+    <view></view>
+  </view>
+  <view class="job_add">
+    <view>
+      <image src="http://127.0.0.1:3000/images/gt/dt.png"></image>
+    </view>
+    <view class="job_addDe">
+      <view><text>北京市朝阳区</text></view>
+      <view><text>酒仙桥将台路5号普天实业科技园16号楼</text></view>
+    </view>
+    <view class="right_jian"></view>
+  </view>
+</view>
+<view class="borderS"></view>
+<!--相似职位推荐-->
+<view class=".tui_T">
+  <view></view>
+  <text>相似职位</text>
+  <view></view>
+</view>
+<view class="likeJob">
+  <view class="job_list">
+    <view class="top">
+      <view class="t_title">
+        <view>WEB前端工程师</view>
+        <view>北京/安贞/1-3年/本科</view>
+      </view>
+      <view>
+        <view class="job_price"><text>10K-15K</text></view>
+        <view><text>10月20日</text></view>
+      </view>
+    </view>
+    <view class="bottom">
+      <view>
+        <image src="http://127.0.0.1:3000/images/gt/biyao.png"></image>
+      </view>
+      <view class="likeInfo">
+        <view><text>必要商城</text></view>
+        <view><text>不需要融资/150-500人/移动互联网，社交网络</text></view>
+      </view> 
+    </view>
+  </view>
+
+  <view class="job_list">
+    <view class="top">
+      <view class="t_title">
+        <view>WEB前端工程师</view>
+        <view>北京/安贞/1-3年/本科</view>
+      </view>
+      <view>
+        <view class="job_price"><text>10K-15K</text></view>
+        <view><text>10月20日</text></view>
+      </view>
+    </view>
+    <view class="bottom">
+      <view>
+        <image src="http://127.0.0.1:3000/images/gt/biyao.png"></image>
+      </view>
+      <view class="likeInfo">
+        <view><text>必要商城</text></view>
+        <view><text>不需要融资/150-500人/移动互联网，社交网络</text></view>
+      </view> 
+    </view>
+  </view>
+
+  <view class="job_list">
+    <view class="top">
+      <view class="t_title">
+        <view>WEB前端工程师</view>
+        <view>北京/安贞/1-3年/本科</view>
+      </view>
+      <view>
+        <view class="job_price"><text>10K-15K</text></view>
+        <view><text>10月20日</text></view>
+      </view>
+    </view>
+    <view class="bottom">
+      <view>
+        <image src="http://127.0.0.1:3000/images/gt/biyao.png"></image>
+      </view>
+      <view class="likeInfo">
+        <view><text>必要商城</text></view>
+        <view><text>不需要融资/150-500人/移动互联网，社交网络</text></view>
+      </view> 
+    </view>
+  </view>
+  <view class="button">
+    <button>查看更多职位</button>
+  </view>
+</view>
+<view class="borderS bs"></view>
+
+<!--底部收藏-->
+<view class="shouc">
+  <image src="http://127.0.0.1:3000/images/gt/fenx.png"></image>
+  <image src="http://127.0.0.1:3000/images/gt/shouc.png"></image>
+  <text>投递简历</text>
+</view>

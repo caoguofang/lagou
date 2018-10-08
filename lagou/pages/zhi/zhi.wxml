@@ -1,0 +1,53 @@
+<!--pages/zhi/zhi.wxml-->
+<!--顶部导航栏-->
+<view class="title">
+  <text>拉勾</text>
+  <text>LAGOU.COM</text>
+  <input type='text' placeholder='搜索公司/职位' placeholder-style='color:#ddd; font-size:16px;margin-left:5%;'></input>
+</view>
+<!--职位推荐-->
+
+<view class=".tui_T">
+  <view></view>
+  <text>为你推荐的好职位</text>
+  <view></view>
+</view>
+
+<!--推荐职位列表-->
+<view class="tuiList" wx:for="{{zhiList}}" bindtap="goZhidetail" wx:key="id">
+  <view>
+    <image src="{{item.img_url}}"></image>
+  <view class="t_info">
+    <text class="t_title">{{item.job}}</text>
+    <text class="t_company">{{item.company}}</text>
+    <text class="t_company">{{item.address}}|{{item.c_require}}</text>
+  </view>
+  </view>
+  <view>
+    <text class="price">{{item.salary}}</text>
+    <text class="time">{{item.r_time}} 发布</text>
+  </view>
+</view>
+
+<view class="loadmore loading" wx:if="{{hasMore}}">正在加载...</view>
+<view calss="loadmore" wx:else>数据已经加载完毕...</view>
+
+
+<view class="dengzhu" style="display:{{showf}}">
+<view class="LR" style="height:{{HH}}px;">
+  <view>
+    <view class="back"><text bindtap='close'>X</text></view>
+    <view class="LRtitle"><text>登录或注册拉勾</text></view>
+    <view class="weixin" bindtap='wxLogin'>
+      <image src='http://127.0.0.1:3000/images/gt/wx.png'></image>
+      <text>微信账号快速登录</text>
+    </view>
+    <view class="shouji"  bindtap='LR'>
+      <image src='http://127.0.0.1:3000/images/gt/sj.png'></image>
+      <text>手机号注册/登录</text>
+    </view>
+    <view class="qita"><text>其它方式登录</text></view>
+  </view>
+</view>
+</view>
+

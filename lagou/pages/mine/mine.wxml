@@ -1,0 +1,64 @@
+<!--pages/mine/mine.wxml-->
+<view class="title" bindtap="dezhu">
+  <view class="left">
+    <view>点击登录</view>
+    <view>登录后查看更多信息</view>
+  </view>
+  <view class="right"> 
+    <image src="http://127.0.0.1:3000/images/gt/00.jpg"></image>
+  </view>
+</view>
+
+<view class="li">
+  <view>  
+    <image src="http://127.0.0.1:3000/images/gt/m_j.png"></image>
+    <text>简历</text>
+  </view>
+  <view class="right_jian"></view>
+</view>
+
+<view class="li">
+  <view>  
+    <image src="http://127.0.0.1:3000/images/gt/m_t.png"></image>
+    <text>投递记录</text>
+  </view>
+  <view class="right_jian"></view>
+</view>
+
+<view class="li">
+  <view>  
+    <image src="http://127.0.0.1:3000/images/gt/sc.png"></image>
+    <text>职位收藏</text>
+  </view>
+  <view class="right_jian"></view>
+</view>
+
+<view class="li">
+  <view>  
+    <image src="http://127.0.0.1:3000/images/gt/yj.png"></image>
+    <text>意见反馈</text>
+  </view>
+  <view class="right_jian"></view>
+</view>
+
+<view class="zhao">
+  <text>切换至我要招人</text>
+</view>
+<!--登录或注册-->
+<view class="dengzhu" style="display:{{showf}}">
+<view class="LR" style="height:{{HH}}px;">
+  <view>
+    <view class="back"><text bindtap='close'>X</text></view>
+    <view class="LRtitle"><text>登录或注册拉勾</text></view>
+    <view class="weixin" bindtap='wxLogin'>
+      <image src='http://127.0.0.1:3000/images/gt/wx.png'></image>
+      <text>微信账号快速登录</text>
+    </view>
+    <view class="shouji" bindtap='LR'>
+      <image src='http://127.0.0.1:3000/images/gt/sj.png'></image>
+      <text>手机号注册/登录</text>
+    </view>
+    <view class="qita"><text>其它方式登录</text></view>
+  </view>
+</view>
+</view>

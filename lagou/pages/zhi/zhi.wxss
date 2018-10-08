@@ -1,0 +1,67 @@
+/* pages/zhi/zhi.wxss */
+.title{
+  background-color:rgb(44, 219, 205);
+  padding-bottom:20rpx;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  box-shadow: 0 0 10rpx 0  #12D3CD;
+}
+.title text:first-child{font-size:34px;}
+.title text{color:#fff;}
+.title text:nth-child(2){font-size:14px;}
+.title input{
+  background-color:#fff;
+  margin:0 auto;
+  width:90%;
+  height:70rpx;
+  border-radius:35rpx;
+}
+
+
+
+/*列表样式*/
+.tuiList{
+  height:160rpx;
+  margin:20rpx 20rpx;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom:14rpx;
+  border-bottom:1rpx solid #ddd;
+}
+.tuiList>view:first-child{
+  display: flex;
+  align-items:center;
+}
+.tuiList>view>image{
+  width:160rpx;
+  height:160rpx;
+}
+.tuiList view.t_info{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left:10rpx;
+}
+.tuiList view.t_info>text{margin:10rpx 0;}
+.tuiList view.t_info>.t_title{
+  font-weight: 400;
+}
+.tuiList view.t_info>.t_company{
+  font-size:12px;
+  font-weight: lighter;
+}
+.tuiList>view:last-child{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.tuiList>view:last-child>.price{
+  color:red;
+  margin-bottom:70rpx;
+}
+.tuiList>view:last-child>.time{
+  font-weight: lighter;
+  font-size:12px;
+}
+

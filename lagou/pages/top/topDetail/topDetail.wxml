@@ -1,0 +1,151 @@
+<!--pages/top/topDetail/topDetail.wxml-->
+<!--上-->
+<view class="top">
+  <view class="tLeft">
+    <view>
+      <text>涂鸦王国</text>
+    </view>
+    <view>
+      <text>厦门/社交网络，文化娱乐/A轮/150-500</text>
+    </view>
+    <image src="http://127.0.0.1:3000/images/gt/renzheng.png"></image>
+  </view>
+  <image src="http://127.0.0.1:3000/images/gt/ty.png"></image>
+</view>
+<view class="fangke">
+  <view>
+    <text>历史访问354，今日方客：</text>
+  </view>
+  <view>
+    <view>
+      <image src="http://127.0.0.1:3000/images/tabbar/mine-active.png"></image>
+      <image src="http://127.0.0.1:3000/images/tabbar/mine-active.png"></image>
+      <image src="http://127.0.0.1:3000/images/tabbar/mine-active.png"></image>
+      <image src="http://127.0.0.1:3000/images/tabbar/mine-active.png"></image>
+      <image src="http://127.0.0.1:3000/images/tabbar/mine-active.png"></image>
+      <image src="http://127.0.0.1:3000/images/tabbar/mine-active.png"></image>
+      <image src="http://127.0.0.1:3000/images/tabbar/mine-active.png"></image>
+      <image src="http://127.0.0.1:3000/images/tabbar/mine-active.png"></image>
+    </view>
+    <view>
+      <text>| ♡</text>
+    </view>
+  </view>
+</view>
+<view class="borderS"></view>
+
+<!--公司主页和职位-->
+<view class="companyInfo">
+  <view>
+    <view class="L" bindtap='showZhuye'>
+     <text style='color:{{color}}'>公司主页</text>
+    </view>
+    <view class="shuxian"></view>
+    <view class="R" bindtap='showJishu'>
+      <text style='color:{{color1}}'>技术(4)</text>
+      <text class="xia_jian"></text>
+    </view>
+  </view>
+  <!--公司主页面-->
+  <view class="zhuye" style='display:{{show}}'>
+    <view class=".tui_T">
+      <view></view>
+      <text>公司介绍</text>
+      <view></view>
+    </view>
+    <!--图片轮播-->
+    <view class="swipe">
+      <swiper autoplay indicator-dots indicator-active-color='red' indicator-color='#fff' interval='3000' duration='500' circular>
+        <swiper-item wx:for="{{imgList}}" wx:key="id">
+          <image src="{{item.img_url}}" mode="aspectFill" lazy-load></image>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view>
+      <text class="text1">
+        涂鸦王国是一家艺术与技术结合的新型科技公司, 公司旗下运营网站涂鸦王国以及插画培训机构王国绘画学院。
+王国绘画学院拥有多年绘画教育经验，强大的师资力量以及教学模式在国内处于领先水平，教学质量和办学环境一直在不断优化，为满足各地学员需求，网络教学用户群体已由国内扩大至海外，在业内拥有良好的口碑与权威，我们在软件园开展插画培训现场班，为学习绘画的朋友们提供更专业与更直接的教学方式。 王国绘画学院作为绘画交流学习基地，不断培养新人插画师，在国内各大出版社、杂志等均有作品刊登，其中优秀插画师更于绘画相关的职业中大放异彩。 王国绘画学院致力于打造业内插画人精英教学为核心的集绘画交流、教学培训、社交网络于一体的大型文化平台。 在王国绘画学院，你可以通过绘画交流认识更多的好朋友，发布个人原创绘画作品，与国内精英画家点对点交流学习，以优质的原创作品吸引业内传媒的关注，在这里推广商业信息与提供就业机会！
+
+欢迎加入涂鸦王国！
+      </text>
+    </view>
+    <view class=".tui_T">
+      <view></view>
+      <text>产品介绍</text>
+      <view></view>
+    </view>
+    <view class="chan">
+      <image src="http://127.0.0.1:3000/images/cd/0.jpg"></image>
+    </view>
+    <view class=".tui_T">
+      <view></view>
+      <text>公司地址</text>
+      <view></view>
+    </view>
+    <!--公司地址-->
+    <view class="address">
+      <view>
+        <view>
+          <image src="http://127.0.0.1:3000/images/gt/dt.png"></image>
+        </view> 
+        <view class="addre">
+          <view><text>厦门市湖里区</text></view>
+          <view><text class="addD">厦门万科云设计社</text></view>
+        </view>
+      </view>
+      <view class="right_jian"></view>
+    </view>
+    <view class="copy">
+      <text>Powered by Lagou.com</text>
+    </view>
+    <!--分享-->
+    <view class="fenxiang">
+      <text>分享</text>
+    </view>
+  </view>
+  <!--技术页面-->
+  <view class="job" style='display:{{show1}}'>
+    <view class="jobList">
+      <text>全部(7)</text>
+      <text>技术</text>
+      <text class="active">产品</text>
+      <text>设计</text>
+      <text>运营</text>
+      <text>市场与销售</text>
+      <text>职能</text>
+      <text>金融</text>
+    </view>
+    <view class="jList">
+      <view>
+        <view><text>WEB前端开发工程师</text></view>
+        <view><text>北京/3-5年</text></view>
+      </view>
+      <view>
+        <view><text>18K-35K</text></view>
+        <view><text>1天前发布</text></view>
+      </view>
+    </view>
+    <view class="jList">
+      <view>
+        <view><text>WEB前端开发工程师</text></view>
+        <view><text>北京/3-5年</text></view>
+      </view>
+      <view>
+        <view><text>18K-35K</text></view>
+        <view><text>1天前发布</text></view>
+      </view>
+    </view>
+    <view class="jList">
+      <view>
+        <view><text>WEB前端开发工程师</text></view>
+        <view><text>北京/3-5年</text></view>
+      </view>
+      <view>
+        <view><text>18K-35K</text></view>
+        <view><text>1天前发布</text></view>
+      </view>
+    </view>
+    <view class="loadmore loading">正在加载...</view>
+  </view>
+</view>
+

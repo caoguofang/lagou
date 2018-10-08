@@ -1,0 +1,48 @@
+<!--pages/mine/loginReg/loginReg.wxml-->
+<view class="register"  style="display:{{regShow}}">
+  <view class="title">
+    <text>注册拉勾</text>
+    <text bindtap="goLog">登录</text>
+  </view>
+  <view class="ym">
+    <view>
+      <text>手机号：</text>
+      <input type="text" auto-focus='1' name="tel" placeholder='请输入您的手机号'></input>
+    </view>
+    <view>
+      <text>密码：</text>
+      <input type="password" name="upwd" placeholder='请输入您的密码'></input>
+    </view>
+    <view class="reg" bindtap="reguser"> 
+      <text>注册</text> 
+    </view>
+  </view>
+  <view class="xieyi">
+    <text>注册拉勾代表你已同意</text>
+    <text>《拉勾用户协议》</text>
+  </view>
+</view>
+
+<view class="login" style="display:{{logShow}}">
+    <view class="title" bindtap="LR">
+    <text>登录拉勾</text>
+    <text bindtap="goReg">注册</text>
+  </view>
+  <view class="ym">
+    <view>
+      <text>手机号：</text>
+      <input type="text" auto-focus='1' placeholder='请输入您的手机号'></input>
+    </view>
+    <view>
+      <text>密码：</text>
+      <input type="password" placeholder='请输入您的密码'></input>
+    </view>
+    <view class="reg"> 
+      <text>登录</text> 
+    </view>
+  </view>
+  <view class="xieyi">
+    <text>注册拉勾代表你已同意</text>
+    <text>《拉勾用户协议》</text>
+  </view>
+</view>
